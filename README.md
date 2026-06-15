@@ -13,7 +13,8 @@
 
 **A cyberpunk-themed file management system with encrypted vault storage, drag-and-drop uploads, and persistent state management built from scratch.**
 
-[Features](#✨-features) • [Tech Stack](#🛠️-tech-stack) • [Getting Started](#🚀-getting-started) • [Architecture](#🏗️-architecture)
+### 🚀 [Live Demo](https://reflexxstorage.vercel.app/)
+
 
 ---
 
@@ -107,3 +108,107 @@ bcrypt for password hashing
 Web Crypto API for AES encryption
 
 Backend authentication (never client-side only)
+```
+
+## Core structure
+
+reflexxstorage/
+├── AGENTS.md
+├── biome.json
+├── eslint.config.mjs
+├── LICENSE
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── postcss.config.mjs
+├── public/
+│   └── favicon.svg
+├── README.md
+├── rsbuild.config.js
+├── rslint.config.ts
+└── src/
+    ├── App.css
+    ├── App.jsx
+    ├── assets/
+    │   └── fonts/
+    │       ├── LexendDeca-Bold.ttf
+    │       ├── LexendDeca-ExtraBold.ttf
+    │       └── LexendDeca-Regular.ttf
+    ├── components/
+    │   ├── breadcrumb/
+    │   │   └── BreadCrumb.jsx
+    │   ├── explorer/
+    │   │   ├── DeleteConfirmModal.jsx
+    │   │   ├── file-upload/
+    │   │   │   ├── Buttons.jsx
+    │   │   │   ├── DragAndDrop.jsx
+    │   │   │   ├── Errors.jsx
+    │   │   │   ├── FileUploadModal.jsx
+    │   │   │   ├── handleCreateFile.jsx
+    │   │   │   └── MediaMetadata.jsx
+    │   │   ├── FileActionMenu.jsx
+    │   │   ├── fileIcons.jsx
+    │   │   ├── FolderActionMenu.jsx
+    │   │   ├── FolderModal.jsx
+    │   │   └── TreeNode.jsx
+    │   └── headers/
+    │       └── Header.jsx
+    ├── index.css
+    ├── index.jsx
+    ├── pages/
+    │   ├── file-explorer/
+    │   │   └── FileExplorer.jsx
+    │   ├── home/
+    │   │   └── Home.jsx
+    │   └── vault/
+    │       ├── index.js
+    │       ├── ValidatePassword.jsx
+    │       ├── vault-explorer/
+    │       │   └── VaultExplorer.jsx
+    │       ├── Vault.jsx
+    │       ├── VaultLogin.jsx
+    │       └── VaultSignUp.jsx
+    ├── Reflexx_Tools/
+    │   ├── file-upload/
+    │   │   ├── index.ts
+    │   │   ├── types.ts
+    │   │   └── useFileUpload.tsx
+    │   ├── react-toast/
+    │   │   ├── GUIDE.md
+    │   │   ├── index.tsx
+    │   │   ├── package.json
+    │   │   ├── src/
+    │   │   │   ├── hooks/
+    │   │   │   │   └── useToast.ts
+    │   │   │   ├── icons/
+    │   │   │   │   ├── DefaultIcon.tsx
+    │   │   │   │   ├── ErrorIcon.tsx
+    │   │   │   │   ├── InfoIcon.tsx
+    │   │   │   │   ├── SuccessIcon.tsx
+    │   │   │   │   └── WarningIcon.tsx
+    │   │   │   └── styles/
+    │   │   │       └── toast.css
+    │   │   ├── Toast.tsx
+    │   │   ├── ToastContainer.tsx
+    │   │   └── types.ts
+    │   └── reflexx-state/
+    │       ├── hooks/
+    │       │   ├── hook.ts
+    │       │   └── indexedDBHooks.ts
+    │       ├── index.ts
+    │       ├── indexedDB.ts
+    │       ├── README.md
+    │       ├── ReflexxStore.ts
+    │       └── types.ts
+    ├── store/
+    │   ├── fileTree.js
+    │   ├── signUpState.js
+    │   ├── userDetails.js
+    │   ├── vaultCheckState.js
+    │   └── vaultTree.js
+    ├── styles/
+    │   ├── fonts.css
+    │   └── theme.css
+    └── utils/
+        ├── checkDuplicate.js
+        └── passwordValidation.js
