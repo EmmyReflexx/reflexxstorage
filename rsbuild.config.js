@@ -15,4 +15,8 @@ export default defineConfig({
       },
     }),
   ],
+  html:{
+    title: 'Reflexx Storage',
+    favicon: './public/favicon.svg',
+  }
 });
