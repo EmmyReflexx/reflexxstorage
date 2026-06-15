@@ -110,8 +110,9 @@ Web Crypto API for AES encryption
 Backend authentication (never client-side only)
 ```
 
-## Core structure
+## 🌳 Project Structure
 
+```
 reflexxstorage/
 ├── AGENTS.md
 ├── biome.json
@@ -212,3 +213,4 @@ reflexxstorage/
     └── utils/
         ├── checkDuplicate.js
         └── passwordValidation.js
+```
