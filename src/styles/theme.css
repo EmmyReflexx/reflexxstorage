@@ -1,0 +1,126 @@
+@theme {
+  /* --- CUSTOM FONTS --- */
+  --font-lexend-b: "LexendDeca-B";
+  --font-lexend-r: "LexendDeca-R";
+  --font-lexend-eb: "LexendDeca-E";
+
+  /* --- TAILWIND V4 VARIABLE REGISTRATION --- */
+  /* Base Layout & Text */
+  --color-bg-canvas: var(--bg-canvas);
+  --color-bg-surface: var(--bg-surface);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+
+  /* Primary Accent & Glows */
+  --color-brand-neon: var(--brand-neon);
+  --color-brand-glow: var(--brand-glow);
+
+  /* Utility & Feedback Colors */
+  --color-neon-edge: var(--neon-edge);
+  --color-neon-danger: var(--neon-danger);
+  --color-neon-success: var(--neon-success);
+  --color-neon-warning: var(--neon-warning);
+  --color-neon-dim: var(--neon-dim);
+
+  /* --- NEW SEPARATE COLORS --- */
+  --color-hover-light: var(--hover-light);
+  /* LIGHT OPACITY: For subtle hover backgrounds only */
+  --color-glass-effect: var(--glass-effect);
+  /* GLASS EFFECT: For backdrop-blur and frosted UI */
+
+  /* Dynamic Layout Gradients */
+  --background-image-gradient-cyber: var(--gradient-cyber);
+  --background-image-gradient-shimmer: var(--gradient-shimmer);
+
+  /* --border-brand-neon: var(--brand-neon); */
+}
+
+/* --- ROOT / LIGHT MODE (Cyber Ice Theme) --- */
+:root {
+  /* Layout Canvas (60% of layout) */
+  --bg-canvas: #f4f7f6;
+  /* MAIN SITE BACKGROUND: Clean, sterile, high-tech ice white */
+  --bg-surface: #ffffff;
+  /* CARDS & CONTAINERS: Pure white blocks to float over the canvas */
+
+  /* Typography */
+  --text-main: #06060c;
+  /* MAIN TEXT: Headings and paragraphs for perfect legibility */
+  --text-muted: #5c6470;
+  /* SECONDARY TEXT: Captions, dates, meta info, and labels */
+
+  /* Accents & Brand (10% of layout) */
+  --brand-neon: #00bbf9;
+  /* PRIMARY ACCENT: Used for links, primary buttons, and highlights */
+  --brand-glow: #00f5d4;
+  /* GLOW EFFECTS: Used for subtle text-shadows and hover glow accents */
+
+  /* Utility Colors */
+  --neon-edge: rgba(0, 187, 249, 0.15);
+  /* BORDERS: Soft, high-tech card borders and grid lines */
+  --neon-danger: #ff0055;
+  /* ERRORS / ALERTS: Bright neon pink-red for destructive buttons/errors */
+  --neon-success: #00f5d4;
+  /* SUCCESS STAMP: Electric mint for success states, badges, and chips */
+  --neon-warning: #ff9e00;
+  /* WARNING / PENDING: Warm high-visibility amber for "in progress" or "caution" states */
+  --neon-dim: #94a3b8;
+  /* TERTIARY / DISABLED: Slate gray for disabled buttons, placeholder text, or non-interactive elements */
+
+  /* --- NEW SEPARATE COLORS (Light Mode) --- */
+  --hover-light: rgba(200, 205, 210, 0.5);
+  /* LIGHT HOVER: Nice soft gray overlay - USE THIS FOR: hover states on clickable elements */
+  --glass-effect: rgba(255, 255, 255, 0.7);
+  /* GLASS EFFECT: Semi-transparent white - USE THIS FOR: backdrop-blur, frosted panels, floating UI */
+
+  /* UI Gradients */
+  --gradient-cyber: linear-gradient(135deg, #00bbf9 0%, #00f5d4 100%);
+  /* HERO CARDS: Energetic focal banner gradient */
+  --gradient-shimmer: linear-gradient(to right, #ffffff, #e2e8f0);
+  /* SECTION SEPARATORS: Soft, subtle structural backgrounds */
+}
+
+/* --- DARK MODE (Shining Black & Purple Theme) --- */
+.dark {
+  /* Layout Canvas (60% of layout) */
+  --bg-canvas: #06060c;
+  /* MAIN SITE BACKGROUND: Deep space "shining" black base */
+  --bg-surface: #121225;
+  /* CARDS & CONTAINERS: Translucent glassy purple-black for cards */
+
+  /* Typography */
+  --text-main: #f4f7f6;
+  /* MAIN TEXT: High-contrast white for headers and reading text */
+  --text-muted: #8a8fa3;
+  /* SECONDARY TEXT: Dimmed text for sub-headers and timestamps */
+
+  /* Accents & Brand (10% of layout) */
+  --brand-neon: #9d4edd;
+  /* PRIMARY ACCENT: Electric neon purple for primary CTAs and active states */
+  --brand-glow: #c77dff;
+  /* GLOW EFFECTS: Lighter purple for text drop-shadows and glowing rings */
+
+  /* Utility Colors */
+  --neon-edge: rgba(157, 78, 221, 0.2);
+  /* BORDERS: Neon wireframe grid line appearance on cards */
+  --neon-danger: #ff0055;
+  /* ERRORS / ALERTS: Piercing neon hot-pink for danger/destructive states */
+  --neon-success: #39ff14;
+  /* SUCCESS STAMP: Blinding radioactive green for online badges/success logs */
+  --neon-warning: #ffb700;
+  /* WARNING / PENDING: Brighter amber that pops against dark backgrounds for alerts */
+  --neon-dim: #5a5c6e;
+  /* TERTIARY / DISABLED: Muted purple-gray that blends with your dark surface for inactive UI */
+
+  /* --- NEW SEPARATE COLORS (Dark Mode) --- */
+  --hover-light: rgba(157, 78, 221, 0.12);
+  /* LIGHT HOVER: Purple-tinted overlay - USE THIS FOR: hover states on clickable elements */
+  --glass-effect: rgba(18, 18, 37, 0.8);
+  /* GLASS EFFECT: Dark semi-transparent - USE THIS FOR: backdrop-blur, frosted panels, floating UI */
+
+  /* UI Gradients */
+  --gradient-cyber: linear-gradient(135deg, #9d4edd 0%, #06060c 100%);
+  /* HERO CARDS: Dark cyberpunk atmospheric background */
+  --gradient-shimmer: linear-gradient(to right, #241442, #06060c);
+  /* SECTION SEPARATORS: Sleek dark horizontal banner glow */
+}

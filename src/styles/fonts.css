@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "LexendDeca-B";
+  src: url("../assets/fonts/LexendDeca-Bold.ttf");
+}
+@font-face {
+  font-family: "LexendDeca-R";
+  src: url("../assets/fonts/LexendDeca-Regular.ttf");
+}
+@font-face {
+  font-family: "LexendDeca-E";
+  src: url("../assets/fonts/LexendDeca-ExtraBold.ttf");
+}

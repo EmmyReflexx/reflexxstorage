@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+/* import fonts.css */
+@import './styles/fonts.css';
+/* import theme.css */
+@import './styles/theme.css';
+
+@layer base {
+  body {
+    @apply bg-bg-canvas;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@layer components {
+  .home-card {
+    @apply bg-bg-surface py-15 w-40 text-center rounded-md border cursor-pointer;
+    border-color: var(--color-brand-neon) ;
+    transition: all 300ms;
+    color: var(--color-text-main);
+  }
+
+  .home-card:hover {
+    @apply scale-105 rounded-2xl;
+    box-shadow: 8px 8px 10px var(--color-hover-light);
+  }
+  .password-instructions {
+    @apply flex items-center gap-2 text-sm text-red-500;
+  }
+  .password-pass {
+    @apply text-green-500;
+  }
+  .password-error {
+    @apply text-red-500;
+  }
+  .p-tooltip .p-tooltip-text {
+    @apply text-xs px-2 py-1.5 whitespace-normal break-words m-2;
+    @apply sm:px-4 sm:py-2.5 sm:m-4;
+    @apply lg:px-5 lg:py-3 lg:m-5;
+  }
+  .header-menu{
+    color: var(--color-text-main);
+  }
+}
