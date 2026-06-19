@@ -78,7 +78,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/emmyreflexx/reflexx.git
+git clone https://github.com/emmyreflexx/reflexxstorage.git
 cd reflexx
 
 # Install dependencies
